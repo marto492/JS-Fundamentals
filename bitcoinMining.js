@@ -11,9 +11,6 @@ function bitcoin(input){
 
     for(let i = 0; i <= input.length-1; i++){
         day++
-
-
-        
         if(day % 3 == 0){
             let steal = input[i] * 0.3
             totalCash += (input[i] - steal) * goldPrice;
