@@ -23,9 +23,6 @@ function englishNameofDigit(digit){
         case 9: name = "nine"
         break;
     }
-
     console.log(name);
-
-
 }
 englishNameofDigit(512556)
