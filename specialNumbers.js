@@ -1,23 +1,4 @@
 function specialNums(num){
-    // let numasString = String(num);
-    // let sum = 0;
-    
-    // for(let i = 1; i <= num; i++){
-       
-    //     let Chars = ""
-    //     if(i < 10){
-    //         String(sum = i);
-    //     }else{
-
-          
-            
-    //     }
-    //     if(sum == "5" || sum =="7" || sum == "11"){
-    //         console.log(`${sum} -> True`);
-    //     }else{
-    //         console.log(`${sum} -> False`);
-    //     }
-    // }
 
 let numAsString = String(num)
 for(let i = 1; i<=Number(numAsString); i++){
@@ -40,6 +21,14 @@ for(let i = 1; i<=Number(numAsString); i++){
 
     }
   }
+
+// while(num != 0){
+// if((num < 10) & ){
+
+// }
+
+// }
+
 }
 
 specialNums(20)
