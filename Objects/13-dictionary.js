@@ -1,18 +1,35 @@
 function dictionary(dict) {
+  let dictObj = {}
   let dictionary = [];
   for (let term of dict) {
     let item = JSON.parse(term);
     dictionary.push(item);
   }
 
+for(let entry of dictionary){
+  let key = Object.keys(entry)
+  let value = Object.values(entry);
+  dictObj[key[0]] = value[0]
+}
 
- 
-  const sortedDictionary = Object.fromEntries(
-    Object.entries(dictionary).sort((a, b) => a[0].localeCompare(b[0]))
-    
-);
+let entries = Object.entries(dictObj);
+entries.sort((a, b) => a[0].localeCompare(b[0]))
 
-console.log(sortedDictionary);
+let sorted = Object.fromEntries(entries)
+
+for(let [term, description] of entries){
+
+  sorted[term] = description
+
+}
+
+let sortedEntries = Object.entries(sorted);
+for(let [term,description] of sortedEntries){
+  console.log(`Term: ${term} => Definition: ${description}`);
+}
+
+
+
 
   }
 dictionary([
